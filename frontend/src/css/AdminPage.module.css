@@ -1,0 +1,318 @@
+
+
+  @font-face {  
+    font-family: 'fff'; 
+     font-weight: 400;  font-style: normal;  
+     font-display: swap; /* Read next point */  
+     unicode-range: U+000-5FF; /* Download only latin glyphs */ 
+      src: local('Custom Font'),             
+      url('../../public/cafe-francoise.woff') 
+      format('woff');
+  }
+
+body{
+  background-color: #e9e7c3;
+}
+.container{
+  margin-left: 30vw;
+  margin-top: 15vh;
+  width: 40vw;
+  height: 60vh;
+  background-color: white;
+  text-align: center;
+  font-family: fff;
+  font-size: 2vw;
+  border-radius: 3%;
+  overflow: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.product_label{
+    width: 40vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product{
+    width: 25vw;
+    height: 7vh;
+    background-color: #f4c95d;
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit_buton{
+    width: 13vw;
+    height: 7vh;
+    background-color: aquamarine;
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.edit_panel{
+    margin-left: 30vw;
+    margin-top: 15vh;
+    width: 40vw;
+    height: 65vh;
+    background-color: white;
+    text-align: center;
+    font-family: fff;
+    font-size: 2vw;
+    border-radius: 3%;
+    display: none;
+}
+
+.input{
+    width: 20vw;
+    margin-left: 2.5vw;
+    height: 5vh;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: fff;
+    font-size: larger;
+    color: #f4c95d;
+    border: solid grey 1px;
+}
+.image_button{
+    width: 20vw;
+    margin-left: 2.5vw;
+    height: 7vh;
+    outline: none;
+    border:  none;
+    font-family: fff;
+    font-size: larger;
+    color: #f4c95d;
+    background-color: white;
+    cursor: pointer;
+}
+input[type=file]::file-selector-button {
+    border: 2px solid #6c5ce7;
+    padding: .2em .4em;
+    border-radius: .2em;
+    background-color: #a29bfe;
+    transition: 1s;
+  }
+.span{
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.large_input{
+    width: 30vw;
+    margin-left: 2.5vw;
+    height: 15vh;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: fff;
+    font-size: larger;
+    color: #f4c95d;
+    border: solid grey 1px;
+}
+.image{
+    width: 20%;
+    height: auto;
+}
+.label{
+    width: 10vw;
+}
+
+.actions{
+    margin-left: 30vw;
+    width: 40vw;
+    height: 15vh;
+    border-radius: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.action_buttons{
+    width: 10vw;
+    height: 10vh;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    text-align: center;
+    font-family: fff;
+    font-size: 2vw;
+    cursor: pointer;
+}
+.action_buttons:hover{
+    background-color: #f4c95d;
+}
+.error_box{
+    width: 35vw;
+    height: 10vh;
+    text-align: center;
+    font-family: fff;
+    font-size: 2vw;
+    border: none;
+    background-color: lightcoral;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .container{
+      margin-left: 25vw;
+      margin-top: 15vh;
+      width: 50vw;
+      height: 60vh;
+      font-size: 3vw;
+      border-radius: 3%;
+  }
+  .actions{
+      width: 50vw;
+      margin-left: 25vw;
+  }
+  .action_buttons{
+    width: 15vw;
+    font-size: 3vw;
+  }
+  .edit_panel{
+    margin-left: 25vw;
+    margin-top: 15vh;
+    width: 50vw;
+    height: 65vh;
+    font-size: 3vw;
+    border-radius: 3%;
+  }
+  .product_label{
+      width: 50vw;
+  }
+  .product{
+    width: 31vw;
+  } 
+  .edit_buton{
+      width: 16vw;
+  }
+  .label{
+    width: 15vw;
+}
+  .input{
+    width: 25vw;
+    margin-left: 2.5vw;
+    height: 5vh;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: fff;
+    font-size: larger;
+    color: #f4c95d;
+    border: solid grey 1px;
+}
+.span{
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .large_input{
+        width: 40vw;
+        margin-left: 2.5vw;
+        height: 15vh;
+        border: none;
+        outline: none;
+        text-align: center;
+        font-family: fff;
+        font-size: larger;
+        color: #f4c95d;
+        border: solid grey 1px;
+    }
+    .error_box{
+        width: 50vw;
+        height: 10vh;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .container{
+      margin-left: 9vw;
+      margin-top: 15vh;
+      width: 80vw;
+      height: 60vh;
+      font-size: 5vw;
+      border-radius: 3%;
+  }
+  .actions{
+    width: 80vw;
+    margin-left: 10vw;
+}
+.action_buttons{
+  width: 25vw;
+  font-size: 6vw;
+}
+.edit_panel{
+  margin-left: 10vw;
+  margin-top: 15vh;
+  width: 80vw;
+  height: 65vh;
+  font-size: 5vw;
+  border-radius: 3%;
+}
+  .product_label{
+    width: 80vw;
+    }
+    .product{
+    width: 50vw;
+    } 
+    .edit_buton{
+        width: 26vw;
+    }
+    .label{
+        width: 25vw;
+    }
+    .input{
+        width: 40vw;
+        margin-left: 2.5vw;
+        height: 5vh;
+        border: none;
+        outline: none;
+        text-align: center;
+        font-family: fff;
+        font-size: larger;
+        color: #f4c95d;
+        border: solid grey 1px;
+    }
+    .span{
+        width: 40vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .large_input{
+        width: 65vw;
+        margin-left: 2.5vw;
+        height: 15vh;
+        border: none;
+        outline: none;
+        text-align: center;
+        font-family: fff;
+        font-size: larger;
+        color: #f4c95d;
+        border: solid grey 1px;
+    }
+    .error_box{
+        width: 80vw;
+        height: 10vh;
+        font-size: 5vw;
+    }
+}

@@ -1,0 +1,54 @@
+
+
+SQL code running on an ElephantSQL server
+
+
+
+
+CREATE TABLE admin(
+adminId serial NOT NULL PRIMARY KEY,
+name varchar(255) NOT NULL,
+password varchar(255) NOT NULL
+);
+
+INSERT INTO admin (name, password)
+VALUES ('admin', 'password');
+
+SELECT * FROM admin;
+
+
+
+
+CREATE TABLE product(
+    productId serial NOT NULL PRIMARY KEY,
+    name varchar(255) NOT NULL,
+    price int NOT NULL,
+    quantity int,
+    description varchar(255),
+    comments text,
+    rating int,
+    image int
+);
+
+INSERT INTO product(name, price, quantity, description, comments, rating, image)
+VALUES ('coffee', 5, 200, 'natural black coffee', 'Nice and cheap coffee', 5, 1);
+
+SELECT * FROM product;
+
+
+
+
+
+
+CREATE TABLE list(
+    listId serial NOT NULL PRIMARY KEY,
+    name varchar(255) NOT NULL,
+    madeBy varchar(255) NOT NULL,
+    productId int,
+    FOREIGN KEY (productId) REFERENCES product (productId) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+INSERT INTO list(name, madeBy, productId)
+VALUES ('mylist', 'andrei', 2);
+
+SELECT * FROM list;
